@@ -1,36 +1,63 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 DevPrep
 
-## Getting Started
+**DevPrep** is a personalized AI-powered interview preparation platform for developers. Upload your resume (PDF), and let DevPrep craft a learning experience tailored just for you. Using advanced LLMs via LangChain, DevPrep creates a custom AI bot and learning area to help you ace your next tech interview.
 
-First, run the development server:
+---
+
+## 🧠 How It Works
+
+1. **Upload Resume (PDF):** Users provide their resume which becomes the base for tailoring the learning path.
+2. **LLM Training:** LangChain processes the resume and builds a personalized context for the AI.
+3. **AI Assistant:** A smart chatbot helps with Q&A, mock interviews, tips, and more.
+4. **Learning Area:** Curated resources and questions based on your resume to focus on relevant topics.
+
+---
+
+## 🛠 Tech Stack
+
+- **Frontend:** [Next.js](https://nextjs.org/)
+- **Backend:** [Node.js](https://nodejs.org/)
+- **LLM Framework:** [LangChain](https://www.langchain.com/)
+- **PDF Parsing:** (e.g., `pdf-parse`, `pdfjs`)
+- **Hosting:** Vercel / Render / Railway (optional)
+
+---
+
+## 📁 Project Structure
+
+devprep/ ├── frontend/ # Next.js frontend ├── backend/ # Node.js backend ├── uploads/ # Resume PDF uploads ├── llm/ # LangChain logic and setup └── README.md
+
+
+---
+
+## 🚧 Features
+
+- 🔍 Resume parsing and skill extraction
+- 🧠 Personalized AI assistant powered by LangChain
+- 📚 Adaptive learning content based on your experience
+- 💬 Interview Q&A and mock sessions
+- 🌐 Clean and responsive UI
+
+---
+
+## 🧪 Local Development
+
+### Prerequisites
+
+- Node.js >= 18
+- NPM or Yarn
+- OpenAI API key
+
+### Steps
+
+1. Clone the repo:
 
 ```bash
+git clone https://github.com/SLANGERES/DevPrep.git
+cd devprep
+
+# In Server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+# In frontend
+npm run dev
